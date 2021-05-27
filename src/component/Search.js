@@ -33,7 +33,7 @@ export default class Search extends React.Component {
 	search = () => {
 		// console.log('searched', this.inputSearch.current.value);
 		const city = this.inputSearch.current.value.trim();
-		const key="9f0c4d97cdc37a790916c647f1a577e6";
+		const key="";
 		fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${key}`, 
 			{ method: 'GET'})
 			.then(response => response.json())
